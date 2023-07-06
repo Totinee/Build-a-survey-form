@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JU-CSE Tour 2023</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <header>
+            <h1 id="title">JU-CSE Picnic-2023 Survey Form</h1>
+            <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+        </header>
+        <form id="survey-form">
+                <label id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+                <label id="number-label">Batch<span>(optional)</span></label>
+                <input type="number" id="number" name="batch" placeholder="Batch" min="1" max="31">
+
+                <label>What is your current role?</label>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="office-stuff">Office-stuff</option>
+                    <option value="guest">Guest</option>
+                </select>
+            
+                <label>Are you travelling with any guest?</label>
+                <label><input type="radio" name="guest" id="" value="yes" class="inline">Yes</label>
+                <label><input type="radio" name="guest" id="" value="no" class="inline">No</label>
+
+                <label for="">Enter the number of guest(s)</label>
+                <input type="number" name="guestNum" id="" min="0" max="3" placeholder="Number of guests">
+
+                <label>Where would you like to go on this tour?</label>
+                <select name="place" id="place">
+                    <option disabled selected value="">Select a place</option>
+                    <option value="stMartin">Saint Martin</option>
+                    <option value="coxBazar">Cox's Bazar</option>
+                    <option value="saarc">SAARC</option>
+                    <option value="bandarban">Bandarbans</option>  
+                </select>
+
+                <label>How can we entertain ourselves on this tour?</label>
+                <label for=""><input type="checkbox" name="entertainment" id="" value="football" class="inline">Play football</label>
+                <label for=""><input type="checkbox" name="entertainment" id="" value="cultural-night" class="inline">Cultural night</label>
+                <label for=""><input type="checkbox" name="entertainment" id="" value="bbq-night" class="inline">BBQ night</label>
+                <label for=""><input type="checkbox" name="entertainment" id="" value="musical-chair" class="inline">Musical chair</label>
+                <label for=""><input type="checkbox" name="entertainment" id="" value="handball" class="inline">Play handball</label>
+                <label for=""><input type="checkbox" name="entertainment" id="" value="charade" class="inline">Play charades</label>
+                <label for=""><input type="checkbox" name="entertainment" id="" value="card" class="inline">Play cards</label>
+
+                <label>Any comments or suggestions?</label>
+                <textarea name="comment" id="comment" cols="10" rows="5" placeholder="Enter your comment here..."></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
